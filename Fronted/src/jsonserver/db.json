@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": "442639",
+      "name": "testName",
+      "surname": "testSurName",
+      "email": "test@gmail.com",
+      "phone": 1234567890,
+      "adress": "testAdress",
+      "birthDate": "1111-11-11",
+      "password": "12345678",
+      "balance": 1000
+    },
+    {
+      "id": "442641",
+      "name": "testName",
+      "surname": "testSurName",
+      "email": "test2@gmail.com",
+      "phone": 1234567890,
+      "adress": "testAdress",
+      "birthDate": "1111-11-11",
+      "password": "12345678",
+      "balance": 1000
+    },
+    {
+      "id": "442644",
+      "name": "testName",
+      "surname": "testSurName",
+      "email": "test3@gmail.com",
+      "phone": 1234567890,
+      "adress": "testAdress",
+      "birthDate": "1111-11-11",
+      "password": "12345678",
+      "balance": 1000
+    },
+    {
+      "id": "344015",
+      "name": "merve",
+      "surname": "yıldız",
+      "email": "merve@gmail.com",
+      "phone": 1234568790,
+      "adress": "asdfsafa",
+      "birthDate": "1111-11-11",
+      "password": "123456434",
+      "balance": 1000
+    },
+    {
+      "id": "909663",
+      "name": "sa",
+      "surname": "as",
+      "email": "asa@gmail.com",
+      "phone": 4524567894,
+      "adress": "afcsb",
+      "birthDate": "1111-11-11",
+      "password": "1234534354",
+      "balance": 1000
+    }
+  ]
+}

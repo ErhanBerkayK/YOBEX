@@ -1,0 +1,533 @@
+/* Modern Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #333;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+  color: #e8e8e8;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #ffffff !important;
+}
+
+body.dark-mode p {
+  color: #d1d1d1 !important;
+}
+
+body.dark-mode .MuiCard-root {
+  background: rgba(26, 26, 46, 0.95) !important;
+  color: #e8e8e8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .MuiCard-root:hover {
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid rgba(255, 107, 53, 0.3) !important;
+}
+
+body.dark-mode .MuiAppBar-root {
+  background: rgba(15, 15, 35, 0.95) !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root {
+  background: rgba(26, 26, 46, 0.9) !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root fieldset {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root:hover fieldset {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #ff6b35 !important;
+}
+
+body.dark-mode .MuiTextField-root .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.dark-mode .MuiTextField-root .MuiInputLabel-root.Mui-focused {
+  color: #ff6b35 !important;
+}
+
+body.dark-mode .MuiButton-outlined {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .MuiButton-outlined:hover {
+  border-color: #ff6b35 !important;
+  background: rgba(255, 107, 53, 0.15) !important;
+}
+
+body.dark-mode .MuiButton-text {
+  color: #ffffff !important;
+}
+
+body.dark-mode .MuiButton-text:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .MuiDrawer-paper {
+  background: rgba(15, 15, 35, 0.98) !important;
+  color: #e8e8e8 !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .MuiMenu-paper {
+  background: rgba(26, 26, 46, 0.98) !important;
+  color: #e8e8e8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .MuiMenuItem-root {
+  color: #e8e8e8 !important;
+}
+
+body.dark-mode .MuiMenuItem-root:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .MuiTooltip-tooltip {
+  background: rgba(26, 26, 46, 0.95) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .MuiChip-root {
+  background: rgba(255, 107, 53, 0.2) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 107, 53, 0.3) !important;
+}
+
+body.dark-mode .MuiTypography-root {
+  color: #e8e8e8 !important;
+}
+
+body.dark-mode .MuiTypography-h1,
+body.dark-mode .MuiTypography-h2,
+body.dark-mode .MuiTypography-h3,
+body.dark-mode .MuiTypography-h4,
+body.dark-mode .MuiTypography-h5,
+body.dark-mode .MuiTypography-h6 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .MuiTypography-body1,
+body.dark-mode .MuiTypography-body2 {
+  color: #d1d1d1 !important;
+}
+
+body.dark-mode .MuiBadge-badge {
+  background: #ff6b35 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .MuiAvatar-root {
+  background: #ff6b35 !important;
+  color: #ffffff !important;
+}
+
+/* Dark mode scrollbar */
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #e65100 0%, #f57c00 100%);
+}
+
+body.dark-mode ::selection {
+  background: rgba(255, 107, 53, 0.4);
+  color: #ffffff;
+}
+
+body.dark-mode .category-section {
+  background: rgba(26, 26, 46, 0.95) !important;
+  color: #e8e8e8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .category-section:hover {
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid rgba(255, 107, 53, 0.3) !important;
+}
+
+body.dark-mode .category-section .MuiButton-root {
+  background: rgba(255, 107, 53, 0.15) !important;
+  color: #ff6b35 !important;
+  border: 2px solid rgba(255, 107, 53, 0.3) !important;
+}
+
+body.dark-mode .category-section .MuiButton-root:hover {
+  background: rgba(255, 107, 53, 0.25) !important;
+  border-color: #ff6b35 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4) !important;
+}
+
+body.dark-mode .category-section .MuiTypography-root {
+  color: #ffffff !important;
+}
+
+body.dark-mode .hero-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .footer {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%) !important;
+  color: #e8e8e8 !important;
+}
+
+/* Dark mode specific text improvements */
+body.dark-mode .gradient-text {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: brightness(1.2);
+}
+
+body.dark-mode .glass-effect {
+  background: rgba(26, 26, 46, 0.3) !important;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Dark mode form improvements */
+body.dark-mode input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body.dark-mode textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Dark mode link colors */
+body.dark-mode a {
+  color: #ff6b35 !important;
+}
+
+body.dark-mode a:hover {
+  color: #f7931e !important;
+}
+
+/* Dark mode table styles */
+body.dark-mode .MuiTable-root {
+  background: rgba(26, 26, 46, 0.95) !important;
+}
+
+body.dark-mode .MuiTableCell-root {
+  color: #e8e8e8 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .MuiTableHead-root .MuiTableCell-root {
+  color: #ffffff !important;
+  background: rgba(255, 107, 53, 0.1) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #e65100 0%, #f57c00 100%);
+}
+
+/* Dark mode scrollbar */
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+}
+
+/* Smooth Animations */
+* {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modern Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+/* Gradient Text Effect */
+.gradient-text {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass Morphism Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Focus States */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #ff6b35;
+  outline-offset: 2px;
+}
+
+/* Selection Color */
+::selection {
+  background: rgba(255, 107, 53, 0.3);
+  color: #333;
+}
+
+body.dark-mode ::selection {
+  background: rgba(255, 107, 53, 0.5);
+  color: #f1f1f1;
+}
+
+/* Modern Form Styles */
+.MuiTextField-root {
+  margin-bottom: 16px;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Button Styles */
+.MuiButton-root {
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.025em !important;
+}
+
+.MuiButton-contained {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.MuiButton-contained:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Container Styles */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Spacing */
+.section {
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+/* Grid Layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Category Section */
+.category-section {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .category-section {
+  background: rgba(45, 45, 45, 0.9);
+  color: #f1f1f1;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 40px 0;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+.mb-2 {
+  margin-bottom: 16px;
+}
+.mb-3 {
+  margin-bottom: 24px;
+}
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mt-1 {
+  margin-top: 8px;
+}
+.mt-2 {
+  margin-top: 16px;
+}
+.mt-3 {
+  margin-top: 24px;
+}
+.mt-4 {
+  margin-top: 32px;
+}
+
+.p-1 {
+  padding: 8px;
+}
+.p-2 {
+  padding: 16px;
+}
+.p-3 {
+  padding: 24px;
+}
+.p-4 {
+  padding: 32px;
+}

@@ -1,0 +1,41 @@
+.register {
+  background-image: url("../assets/images/register-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.register-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.form-div {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-div .name-surname {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.form-div input {
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.save-button {
+  margin-right: 10px !important;
+}
