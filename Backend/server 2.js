@@ -19,12 +19,11 @@ app.use(express.json());
 connectDB();
 
 
-/// TUM URUNLERI LISTELEME:
-// http://localhost:8000/api/listAllProducts
+
 const productRoutes = require("./routes/listAllProducts.js");
 app.use("/api/listAllProducts", productRoutes);
 
-/// YUSUF ROUTES:
+
 app.use(express.json());
 app.use("/api/cart", cartRoutes);
 
